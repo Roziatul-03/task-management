@@ -1,0 +1,48 @@
+.tasklisting-container {
+    padding: 25px;
+}
+
+.tasklisting-container button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+.tasklisting-container button:hover {
+    cursor: pointer;
+    background-color: rgb(230, 225, 225);
+}
+
+.tasklisting-title {
+    display: flex;
+    justify-content: center;
+}
+
+.tasklisting-table {
+    border-collapse: collapse;
+    border-spacing: 0 7px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tasklisting-table tr th {
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.tasklisting-table tr th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.tasklisting-table tr th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 10px;
+}
+
+.tasklisting-table tr td {
+    padding: 16px;
+    border-bottom: 1px solid black;
+}
