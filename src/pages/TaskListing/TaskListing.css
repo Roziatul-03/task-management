@@ -2,22 +2,27 @@
     padding: 25px;
 }
 
+.tasklisting-title {
+    display: flex;
+    justify-content: center;
+}
+
+.tasklisting-content {
+    padding: 0 50px;
+}
+
 .tasklisting-container button {
+    background-color: rgb(133, 211, 236);
     font-size: 16px;
     font-weight: 600;
-    padding: 8px 10px;
-    border-radius: 8px;
-    border: 1px solid lightgray;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(185, 185, 185);
 }
 
 .tasklisting-container button:hover {
     cursor: pointer;
-    background-color: rgb(230, 225, 225);
-}
-
-.tasklisting-title {
-    display: flex;
-    justify-content: center;
+    background-color: rgb(165, 221, 240);
 }
 
 .tasklisting-table {
@@ -28,21 +33,65 @@
 }
 
 .tasklisting-table tr th {
-    background-color: lightcoral;
+    background-color: rgb(133, 211, 236);
     padding: 10px;
+    text-align: left;
+}
+
+.tasklisting-table tr th:hover {
+    cursor: pointer;
 }
 
 .tasklisting-table tr th:first-child {
     border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
 }
 
 .tasklisting-table tr th:last-child {
     border-top-right-radius: 6px;
-    border-bottom-right-radius: 10px;
+}
+
+.tasklisting-table tr th span {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.tasklisting-table tbody tr:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 .tasklisting-table tr td {
-    padding: 16px;
+    padding: 12px;
     border-bottom: 1px solid black;
+    background-color: rgb(230, 249, 255);
+    vertical-align: top;
+}
+
+.tasklisting-table tbody tr input:hover {
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+}
+
+.tasklisting-data.completed {
+    text-decoration: line-through;
+}
+
+.tasklisting-description {
+    white-space: pre-wrap;
+}
+
+.tasklisting-description.completed {
+    text-decoration: line-through;
+}
+
+.tasklisting-empty-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
